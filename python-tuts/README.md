@@ -9,3 +9,26 @@
 - Regex : https://developers.google.com/edu/python/regular-expressions
 - OOP : https://realpython.com/python3-object-oriented-programming/
 
+### Convert tuple to list 
+```
+tuple(list)
+tuple(i for i in list)
+```
+
+### Ascii value 
+
+```
+c = 'p'
+print("The ASCII value of '" + c + "' is", ord(c))
+```
+
+### Loop over Dict
+- https://developers.google.com/edu/python/dict-files
+
+### Sorted dict 
+```
+ ## Common case -- loop over the keys in sorted order,
+  ## accessing each key/value
+  for key in sorted(dict.keys()):
+    print(key, dict[key])
+```
