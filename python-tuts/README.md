@@ -6,6 +6,8 @@
 - Python general review: https://developers.google.com/edu/python
 - Heap libs:  https://docs.python.org/3/library/heapq.html
 - List comprehension : https://www.w3schools.com/python/python_lists_comprehension.asp
+- https://www.geeksforgeeks.org/python-dictionary-comprehension/
+- https://www.pythonforbeginners.com/basics/set-comprehension-in-python
 - Regex : https://developers.google.com/edu/python/regular-expressions
 - OOP : https://realpython.com/python3-object-oriented-programming/
 
@@ -24,8 +26,7 @@ print("The ASCII value of '" + c + "' is", ord(c))
 
 ### Loop over Dict
 - https://developers.google.com/edu/python/dict-files
-- https://www.geeksforgeeks.org/python-dictionary-comprehension/
-- https://www.pythonforbeginners.com/basics/set-comprehension-in-python
+
 
 ### Sorted dict 
 ```
