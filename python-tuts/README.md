@@ -51,3 +51,15 @@ print("The ASCII value of '" + c + "' is", ord(c))
 >>> p                       # readable __repr__ with a name=value style
 Point(x=11, y=22)
 ```
+
+### MAth inf 
+```
+# Import math Library
+import math
+
+# Print the positive infinity
+print (math.inf)
+
+# Print the negative infinity
+print (-math.inf)
+```
