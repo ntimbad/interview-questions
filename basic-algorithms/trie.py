@@ -10,12 +10,12 @@ class Trie:
 
     # Inserts a word into the trie.
     def insert(self, word: str) -> None:
-        cur = self.root;
+        cur = self.root
         for c in word:
             if c not in cur.nodes:
                 cur.nodes[c] = TrieNode()
             cur = cur.nodes[c]
-        cur.isWord = True;
+        cur.isWord = True
 
     # Returns if the word is in the trie
     def search(self, word: str) -> bool:
