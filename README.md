@@ -10,3 +10,7 @@ https://www.piratekingdom.com/leetcode/templates
 [Djikstra's Shortest Path](basic-algorithms/djikstra_shortest_path.py)
 
 [Trie](basic-algorithms/trie.py)
+
+[Lomuto Partitioning](basic-algorithms/lomuto_partition.py)
+
+[Birectional BFS](basic-algorithms/birectional_bfs.py)

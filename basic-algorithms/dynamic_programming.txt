@@ -1,0 +1,13 @@
+let's look at both concepts in the context of the Knapsack problem:
+
+1. **Optimal Substructure:** The Knapsack problem exhibits the property of optimal substructure, meaning the optimal solution to a problem can be constructed efficiently from the optimal solutions of its subproblems.
+
+   For instance, let's consider a knapsack with a total capacity of 'W'. Now, suppose we have a set of items, each with a specific weight and value. The problem is to fill the knapsack such that the total value is maximized and the total weight doesn't exceed 'W'.
+
+   Here, we can break down the problem into smaller subproblems by considering whether to include each item in the knapsack one by one. The optimal solution for the problem with 'n' items and capacity 'W' can be composed by comparing the solutions from two scenarios: including the 'n-th' item (if it doesn't exceed the capacity) and not including the 'n-th' item. The maximum of these two scenarios will give us the optimal solution for the problem.
+
+2. **Overlapping Subproblems:** The Knapsack problem also shows the property of overlapping subproblems, meaning the same subproblems are solved many times.
+
+   Let's say we are deciding whether to include the 'n-th' item in the knapsack. To make this decision, we need to solve two smaller subproblems: find the optimal solution for 'n-1' items and capacity 'W', and find the optimal solution for 'n-1' items and capacity 'W' minus the weight of the 'n-th' item (if it can be included).
+
+   As we proceed with other items, we will end up solving these subproblems multiple times, as the choices for each item are independent of each other. This overlapping of subproblems can be drastically optimized by using dynamic programming, where we store the solutions of subproblems so that we don't have to solve them again when they're needed in the future.
