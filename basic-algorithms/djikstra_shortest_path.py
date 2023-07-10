@@ -1,5 +1,6 @@
 from heapq import *
 
+
 def dijkstra(graph, start):
     distances = {node: float('inf') for node in graph}
     distances[start] = 0
@@ -19,6 +20,7 @@ def dijkstra(graph, start):
                 heappush(heap, (distance, neighbor))
 
     return distances
+
 
 if __name__ == '__main__':
     graph = {

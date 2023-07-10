@@ -1,5 +1,6 @@
 from collections import deque
 
+
 def bidirectional_bfs(graph, start, end):
     if start not in graph or end not in graph:
         return False

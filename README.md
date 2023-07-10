@@ -1,7 +1,8 @@
 # interview-questions
 
-### Few code algorithm templates: 
-https://www.piratekingdom.com/leetcode/templates
+### Few code algorithm templates:
+
+[Templates](https://www.piratekingdom.com/leetcode/templates)
 
 [Graph Traversals](basic-algorithms/graph_traversal.py)
 
@@ -14,3 +15,7 @@ https://www.piratekingdom.com/leetcode/templates
 [Lomuto Partitioning](basic-algorithms/lomuto_partition.py)
 
 [Birectional BFS](basic-algorithms/birectional_bfs.py)
+
+[Topological Sort DFS](basic-algorithms/topological_sort_dfs.py)
+
+[Topological Sort BFS](basic-algorithms/topological_sort_bfs.py)
