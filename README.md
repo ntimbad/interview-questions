@@ -19,3 +19,11 @@
 [Topological Sort DFS](basic-algorithms/topological_sort_dfs.py)
 
 [Topological Sort BFS](basic-algorithms/topological_sort_bfs.py)
+
+[Quick Sort](basic-algorithms/quick_sort.py)
+
+[Merge Sort](basic-algorithms/merge_sort.py)
+
+[Kadane's Algorithm](basic-algorithms/kadane.py)
+
+[Sliding Window (Fixed vs Variable)](basic-algorithms/sliding_window.py)
