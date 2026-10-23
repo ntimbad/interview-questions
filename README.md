@@ -27,3 +27,5 @@
 [Kadane's Algorithm](basic-algorithms/kadane.py)
 
 [Sliding Window (Fixed vs Variable)](basic-algorithms/sliding_window.py)
+
+[NeetCode 150 (checklist + main hints)](neetcode-150.md)
