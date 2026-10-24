@@ -6,36 +6,36 @@ The [NeetCode 150](https://neetcode.io/practice) problems with the main hint (cr
 
 | Done | Problem | Main Hint |
 | :-: | --- | --- |
-| ☐ | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Put items in a set; a repeat means duplicate. |
-| ☐ | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Compare character counts (Counter or 26-array). |
-| ☐ | [Two Sum](https://leetcode.com/problems/two-sum/) | Hash map of value -> index; look up `target - x` as you go. |
-| ☐ | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Hash key = sorted word or 26-count tuple. |
-| ☐ | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Count, then bucket sort by frequency (index = count) for O(n). |
-| ☐ | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Length-prefix each string: `len#str`, so delimiters in the data don't matter. |
-| ☐ | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix product pass, then suffix product pass; no division. |
-| ☐ | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Sets per row, column and 3x3 box (box = `(r//3, c//3)`). |
-| ☐ | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Set; only start counting from numbers where `n-1` is absent. |
+| ☑ | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | Put items in a set; a repeat means duplicate. |
+| ☑ | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | Compare character counts (Counter or 26-array). |
+| ☑ | [Two Sum](https://leetcode.com/problems/two-sum/) | Hash map of value -> index; look up `target - x` as you go. |
+| ☑ | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | Hash key = sorted word or 26-count tuple. |
+| ☑ | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | Count, then bucket sort by frequency (index = count) for O(n). |
+| ☑ | [Encode and Decode Strings](https://leetcode.com/problems/encode-and-decode-strings/) | Length-prefix each string: `len#str`, so delimiters in the data don't matter. |
+| ☑ | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix product pass, then suffix product pass; no division. |
+| ☑ | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | Sets per row, column and 3x3 box (box = `(r//3, c//3)`). |
+| ☑ | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | Set; only start counting from numbers where `n-1` is absent. |
 
 ## Two Pointers
 
 | Done | Problem | Main Hint |
 | :-: | --- | --- |
-| ☐ | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Pointers from both ends, skipping non-alphanumerics. |
-| ☐ | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Sorted: sum too big -> move right pointer left, too small -> move left right. |
-| ☐ | [3Sum](https://leetcode.com/problems/3sum/) | Sort, fix one number, two-pointer the rest; skip duplicates. |
-| ☐ | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Move the pointer at the shorter wall; width shrinks so only a taller wall can help. |
-| ☐ | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Water at i = min(maxLeft, maxRight) - h[i]; two pointers track the smaller side's max. |
+| ☑ | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | Pointers from both ends, skipping non-alphanumerics. |
+| ☑ | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | Sorted: sum too big -> move right pointer left, too small -> move left right. |
+| ☑ | [3Sum](https://leetcode.com/problems/3sum/) | Sort, fix one number, two-pointer the rest; skip duplicates. |
+| ☑ | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | Reduce and conquer: start with the widest container (pointers at both ends) and shrink the search space one wall at a time. Area = width * min(height), so the shorter wall is the bottleneck. Moving the taller wall inward can only shrink the width without raising the limit, so it can never beat the current area; always move the shorter wall in the hope of finding a taller one. |
+| ☑ | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | Water at i = min(maxLeft, maxRight) - h[i]; two pointers track the smaller side's max. |
 
 ## Sliding Window
 
 | Done | Problem | Main Hint |
 | :-: | --- | --- |
-| ☐ | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Track min price so far; best = max(price - min). |
-| ☐ | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Window + set/last-index map; shrink left on repeat. |
-| ☐ | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Valid if `window - maxFreq <= k`; maxFreq never needs to decrease. |
-| ☐ | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Fixed window of len(s1); compare char counts. |
-| ☐ | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Expand until all needed chars are covered (`have == need`), then shrink to minimize. |
-| ☐ | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Monotonic decreasing deque of indices; front is the max. |
+| ☑ | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | Track min price so far; best = max(price - min). |
+| ☑ | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Window + set/last-index map; shrink left on repeat. |
+| ☑ | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | Valid if `window - maxFreq <= k`; maxFreq never needs to decrease. |
+| ☑ | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | Fixed window of len(s1); compare char counts. |
+| ☑ | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) | Expand until all needed chars are covered (`have == need`), then shrink to minimize. |
+| ☑ | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) | Monotonic decreasing deque of indices; front is the max. |
 
 ## Stack
 
